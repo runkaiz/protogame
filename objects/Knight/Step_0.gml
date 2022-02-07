@@ -1,6 +1,6 @@
 if (!isFighting) isMoving = PlayerMovement(3, self, KnightIdle, KnightRun);
 
-if (!isMoving) isFighting = PlayerCombat(self, KnightStab);
+if (!isMoving) isFighting = PlayerCombat(self, KnightStab, KnightShield);
 print(isFighting);
 
 // Listen for interrupts

@@ -1,19 +1,26 @@
 {
   "resources": [
     {"id":{"name":"PlayerCombat","path":"scripts/PlayerCombat/PlayerCombat.yy",},"order":1,},
+    {"id":{"name":"Menu","path":"sprites/Menu/Menu.yy",},"order":5,},
     {"id":{"name":"Render","path":"objects/Render/Render.yy",},"order":1,},
+    {"id":{"name":"Entry","path":"rooms/Entry/Entry.yy",},"order":1,},
+    {"id":{"name":"spr_WorldBorder","path":"sprites/spr_WorldBorder/spr_WorldBorder.yy",},"order":3,},
     {"id":{"name":"License","path":"notes/License/License.yy",},"order":0,},
     {"id":{"name":"Setup","path":"notes/Setup/Setup.yy",},"order":1,},
     {"id":{"name":"lib_horrifi","path":"scripts/lib_horrifi/lib_horrifi.yy",},"order":2,},
     {"id":{"name":"Thanks","path":"notes/Thanks/Thanks.yy",},"order":2,},
+    {"id":{"name":"Options","path":"rooms/Options/Options.yy",},"order":2,},
     {"id":{"name":"KnightStab","path":"sprites/KnightStab/KnightStab.yy",},"order":2,},
     {"id":{"name":"PlayerMovement","path":"scripts/PlayerMovement/PlayerMovement.yy",},"order":0,},
     {"id":{"name":"KnightIdle","path":"sprites/KnightIdle/KnightIdle.yy",},"order":0,},
+    {"id":{"name":"KnightShield","path":"sprites/KnightShield/KnightShield.yy",},"order":4,},
     {"id":{"name":"KnightRun","path":"sprites/KnightRun/KnightRun.yy",},"order":1,},
     {"id":{"name":"shd_horrifi","path":"shaders/shd_horrifi/shd_horrifi.yy",},"order":3,},
     {"id":{"name":"Knight","path":"objects/Knight/Knight.yy",},"order":0,},
+    {"id":{"name":"obj_Menu","path":"objects/obj_Menu/obj_Menu.yy",},"order":3,},
+    {"id":{"name":"WorldBorder","path":"objects/WorldBorder/WorldBorder.yy",},"order":2,},
     {"id":{"name":"print","path":"scripts/print/print.yy",},"order":2,},
-    {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},"order":0,},
+    {"id":{"name":"Lobby","path":"rooms/Lobby/Lobby.yy",},"order":0,},
   ],
   "Options": [
     {"name":"Linux","path":"options/linux/options_linux.yy",},
@@ -29,7 +36,9 @@
     "children": [],
   },
   "RoomOrderNodes": [
-    {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"roomId":{"name":"Entry","path":"rooms/Entry/Entry.yy",},},
+    {"roomId":{"name":"Lobby","path":"rooms/Lobby/Lobby.yy",},},
+    {"roomId":{"name":"Options","path":"rooms/Options/Options.yy",},},
   ],
   "Folders": [
     {"folderPath":"folders/Sprites.yy","order":1,"resourceVersion":"1.0","name":"Sprites","tags":[],"resourceType":"GMFolder",},
