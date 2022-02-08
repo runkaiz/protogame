@@ -3,4 +3,4 @@
 animationInterrupted = false;
 animationInterrupt = false;
 animationInterruptTime = 0;
-isFighting = false;
+disableMovement = false;

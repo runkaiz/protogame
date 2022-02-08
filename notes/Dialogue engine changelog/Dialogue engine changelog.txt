@@ -1,0 +1,166 @@
+Dialogue engine - Text boxes: Changelog
+---------------------------------------
+Version 2.4.0
+
+BIG CHANGES
+- Speech bubbles are now always inside the view.
+- Simple backlogs are here! Especially useful for visual novel type games. The new scripts are: textbox_show_backlog(), textbox_backlog_visible() and "internal" script textbox_draw_backlog().
+- Now you can set an infinite amount of messages in one textbox! (Previously 10 was the max.)
+- Now it's possible to select the option with WASD.
+- Selected option will now have a rectangle so it's easier to see. (Option objects will now be invisible.)
+
+LITTLE CHANGES
+- Removed some unnecessary lines of code from the "internal" scripts and made some little changes to possibly improve performance.
+- Decreased dialogue skip delay slightly (again).
+- Updated manual
+
+BUG FIXES
+- There is a possibility that this update fixes some rare bugs with the speech bubbles.
+- Fixed bug that prevented continuing in dialogue if the speed of the text was a certain value.
+
+---------------------------------------
+Version 2.3.0
+
+BIG CHANGES
+- New script: textbox_hide() - Hides or shows the textbox
+- New script: textbox_is_visible() - Checks if the textbox is visible or not
+
+LITTLE CHANGES
+- Continue icon now shows after the delay, when it's actually possible to continue. It's a small change, but makes the dialogue feel better.
+- Decreased dialogue skip delay slightly. This makes it feel a little smoother.
+- Now speaker's face sprite will not be resized if it's position has been changed using textbox_set_position().
+- Updated manual
+- Removed "To do" note
+
+---------------------------------------
+Version 2.2.0
+
+BIG CHANGES
+- Now the speaker's face sprite can be of any size and it will be automatically resized
+- Removed script textbox_sound_on. Now sound gets on when setting the sound with textbox_set_sound.
+- Added possibility to change the volume and interval of textbox sound (optional arguments in textbox_set_sound).
+
+LITTLE CHANGES
+- Changed the default size of the textbox. Now it's slightly smaller.
+- Changed the skip delay from 5 steps to 4.
+
+BUG FIXES
+- Removed unnecessary script call from signboard
+
+---------------------------------------
+Version 2.1.0
+
+LITTLE CHANGES
+- Made option_objects compatible with my cutscene engine
+- Added new example: signboard. It shows how to have only one object for different dialogue.
+- Improved documentation / manual
+- Changed help note name: Dialogue engine manual
+
+BUG FIXES
+- Fixed option objects showing error when textbox doesn't exist
+
+---------------------------------------
+Version 2.0.3
+
+BUG FIXES
+- Now when using mouse to choose an option, it needs to point an option before the dialogue can continue
+- Now there is a delay after the text is complete to prevent accidentally skipping dialogue
+
+LITTLE CHANGES
+- In the example it's now possible to move with WASD.
+
+---------------------------------------
+Version 2.0.1
+
+LITTLE CHANGES
+- textbox_set() script is now optional - if it's not used, default style will be used
+
+---------------------------------------
+Version 2.0.0
+
+BIG CHANGES
+- Now speak key and skip key can be the same key! By default both are space.
+
+LITTLE CHANGES
+- Removed useless argument from script textbox_change_message_according_option()
+- Removed "info" script. Instead there is a "Help" note.
+- Improved scripts a little (mostly appearance)
+- Added F11 for fullscreen in the example
+
+---------------------------------------
+Version 1.9.0
+
+BIG CHANGES
+- Now it's possible to add a "continue" icon
+- Compatible with GMS 2.3
+
+LITTLE CHANGES
+- Made enable mouse argument optional
+
+---------------------------------------
+Version 1.8.4
+
+BUG FIXES
+- Fixed a little bug that sometimes made speech bubbles weird
+
+---------------------------------------
+Version 1.8.0
+
+BIG CHANGES
+- textbox_set script updated with a new argument: EnableMouse. If it's set true, mouse can be used to advance in dialogue and
+choose options. If you want to change the sprite of the box in the options, change it manually in the option objects.
+- Options now appear after the whole text has appeared.
+
+BUG FIXES
+- When using speech bubbles, sometimes things were calculated incorrectly because of font size variations, now it's fixed.
+
+--------------------------------------
+Version 1.7.2
+
+BUG FIXES
+- If character sprite was an animation, it was stuck in the first frame. Now the animation will play.
+
+---------------------------------------
+Version 1.7.1
+
+BUG FIXES
+- Optimized options_draw script (Going to update it again soon because it could be better)
+
+-----------------------------------------
+Version 1.7.0
+
+BIG CHANGES
+- New script: textbox_change_var_at_end()
+
+-----------------------------------------
+Version 1.6.0
+
+BIG CHANGES
+- Updated scripts: textbox_draw() and textbox_set_sprite()
+	- Now it's possible to change the name rectangle sprite separately
+	- The text will align automatically to any character sprite size.
+- New script: textbox_set_position()! With it you can change the position of of the textbox, name box and character sprite, etc.
+
+BUG FIXES
+- In the textbox_draw()
+	- It was checking for width when it was supposed to check for height
+	- Removed a thing that is not needed because there is a new script textbox_set_position().
+	
+--------------------------------------------------------------------------------
+Version 1.5.0
+- Started changelog!
+
+BIG CHANGES
+- New script, textbox_set_sprite()! With it you can set a sprite to the textbox, instead of only colors.
+- Updated textbox_draw() and options_draw() scripts
+	- Added a possibility to set a sprite for the textbox, instead of only colors
+	- Now they work also without views
+	- They have been made easier to read with temporal variables
+- Added a new example npc about the textbox_set_sprite().
+
+
+BUG FIXES
+- Fixed a bug where, when having only 1 option, the option was in a wrong position
+- Other small fixes
+
+----------------------------------------------------------------------------------

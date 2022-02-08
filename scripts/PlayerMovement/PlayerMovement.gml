@@ -20,8 +20,8 @@ function PlayerMovement(_initVelocity, _player, _idleAnimation, _runAnimation) {
     if (isLeft) xVel = -1;
 	
 	// Set sprite orientation
-	if (isRight) _player.image_xscale = 2.5;;
-	if (isLeft) _player.image_xscale = -2.5;;
+	if (isRight) _player.image_xscale = 1;
+	if (isLeft) _player.image_xscale = -1;
 
     // proposed new position
     newX = x + xVel * velocity;

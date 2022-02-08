@@ -1,5 +1,5 @@
 function PlayerCombat(_player, _stabAnimation, _shieldAnimation) {
-	currentState = _player.isFighting;
+	currentState = _player.disableMovement;
 	
 	if (mouse_check_button_pressed(mb_left) && !_player.animationInterrupt) {
 		_player.sprite_index = _stabAnimation;

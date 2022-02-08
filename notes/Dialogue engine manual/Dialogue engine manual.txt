@@ -1,0 +1,118 @@
+DIALOGUE ENGINE MANUAL
+
+------------------------------------------
+CONTENTS
+- Introduction
+- Scripts
+	- Basic scripts
+	- Settings scripts
+	- Styling scripts
+	- Options scripts
+	- Other scripts
+- Using Dialogue engine with Cutscene engine
+- Other things
+	
+------------------------------------------
+INTRODUCTION
+
+Thank you for getting Dialogue engine - text boxes! This manual will help you get started.
+
+The fastest way to get started is probably checking the example objects to see how this engine can be used.
+Also, at the end of every script there is a little example of how to use it.
+
+If you want to ask anything or suggest a feature, send an email to me.
+My email: pikkua.games@gmail.com
+
+------------------------------------------
+SCRIPTS
+
+	BASIC SCRIPTS
+	
+	textbox_create()
+	With this script you can create the dialogue.
+	
+	------------------------
+	SETTINGS SCRIPTS
+	
+	textbox_set()
+	With this you can set the style and some settings of the textbox.
+
+	textbox_set_bubble()
+	If you call this instead of textbox_set(), you can make the textbox a speech bubble.
+	
+	textbox_set_speed()
+	With this you can set the speed of the dialogue. The default speed is 0.5.
+	
+	textbox_set_key()
+	With this you can choose the keyboard keys used for the dialogue.
+	
+	textbox_set_sound()
+	Choose the sound for the dialogue.
+	It could be, for example, a typewriter sound.
+	
+	------------------------
+	STYLING SCRIPTS
+	
+	textbox_set_sprite()
+	With this function you can add your own sprite for the textbox and name box, instead of colored rectangles.
+	(The sprite size should be a multiple of 3, for example, 12 or 24).
+	
+	textbox_set_position()
+	Set the position of the textbox, and additionally, the name box and character sprite.
+	The textbox automatically fits the view, but if you don't like how it goes, you can change it with this.
+	
+	------------------------
+	OPTIONS SCRIPTS
+	
+	textbox_add_options()
+	Add up to 3 options.
+	
+	textbox_change_message_according_option()
+	Change one message depending on what option the player chooses.
+	
+	textbox_change_var_at_end()
+	Change a variable when the dialogue ends.
+	You could use this, for example, to know if the player has spoken to a npc or not.
+	
+	chooses_option()
+	Checks what option the player chooses. You can use it to change something (for example a variable).
+	For an example, see the object: example_npc3.
+	
+	OTHER SCRIPTS
+	
+	textbox_exists()
+	Checks if the textbox exists.
+	Call it before using textbox_create(). For example:
+	if !textbox_exists() {
+		textbox_create("Hello.");
+	}
+	
+	textbox_hide() and textbox_is_visible()
+	textbox_is_visible() checks if the textbox is visible or not and textbox_hide() can be used to hide or show the textbox.
+	For example:
+	if textbox_exists() {
+		if keyboard_check_pressed(vk_escape) {
+			if textbox_is_visible() {
+				textbox_hide(true);
+			}else{
+				textbox_hide(false);
+			}
+		}
+	}
+	
+	textbox_show_backlog() && textbox_backlog_visible()
+	textbox_backlog_visible() checks if the backlog is visible or not.
+	textbox_show_backlog() shows or hides the backlog.
+	
+	
+---------------------------------
+USING DIALOGUE ENGINE WITH CUTSCENE ENGINE
+I have also made a cutscene engine (https://marketplace.yoyogames.com/assets/8241/cutscene-engine).
+It uses some of the same scripts and objects as the dialogue engine. When importing these scripts and objects, you can replace the duplicates.
+Regarding the option objects, if you use both dialogue & cutscene engine, you have to uncomment a certain part from the option_object1, option_object2 & option_object3.
+
+---------------------------------
+OTHER THINGS
+You can ignore the textbox object. It manages itself. You can also ignore the internal scipts.
+
+I'm planning to add instructions here on how to use this in different type of games (for example, in a visual novel).

@@ -1,7 +1,6 @@
-if (!isFighting) isMoving = PlayerMovement(3, self, KnightIdle, KnightRun);
+if (!disableMovement) disableCombat = PlayerMovement(3, self, KnightIdle, KnightRun);
 
-if (!isMoving) isFighting = PlayerCombat(self, KnightStab, KnightShield);
-print(isFighting);
+if (!disableCombat) disableMovement = PlayerCombat(self, KnightStab, KnightShield);
 
 // Listen for interrupts
 
