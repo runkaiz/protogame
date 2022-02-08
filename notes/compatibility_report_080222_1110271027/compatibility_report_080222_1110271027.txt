@@ -1,0 +1,63 @@
+Converting GML script: ${project_dir}\scripts\scr_shooter_ai_step\scr_shooter_ai_step.gml
+Converted description /// @description scr_shooter_ai_step(targetenemy,wall,speed,assaulter?,enemybullet)/// @param targetenemy
+/// @param wall
+/// @param speed
+/// @param assaulter?
+/// @param enemybullet
+
+Converting GML script: ${project_dir}\scripts\scr_find_target\scr_find_target.gml
+Converted description /// @description scr_find_target(enemy,enemy_bullet,wallobject)/// @param enemy
+/// @param enemy_bullet
+/// @param wallobject
+
+Converting GML script: ${project_dir}\scripts\scr_shoot\scr_shoot.gml
+Converted description /// @description scr_shoot(bullet,speed,direction)/// @param bullet
+/// @param speed
+/// @param direction
+
+Converting GML script: ${project_dir}\scripts\scr_fear_control\scr_fear_control.gml
+Converted description /// @description scr_fear_control(enemybullet)/// @param enemybullet
+
+Converting GML script: ${project_dir}\scripts\scr_find_cover\scr_find_cover.gml
+Converted description /// @description scr_find_cover(nearestwall,targetenemy,speed)/// @param nearestwall
+/// @param targetenemy
+/// @param speed
+
+Converting GML script: ${project_dir}\scripts\scr_peek_cover\scr_peek_cover.gml
+Converted description /// @description scr_peak_cover(nearestwall,targetenemy,speed,wallobject)/// @param nearestwall
+/// @param targetenemy
+/// @param speed
+/// @param wallobject
+
+Converting GML script: ${project_dir}\scripts\scr_assault\scr_assault.gml
+Converted description /// @description scr_assault(targetenemy,wallobject,speed)/// @param targetenemy
+/// @param wallobject
+/// @param speed
+
+Converting GML script: ${project_dir}\scripts\scr_seek\scr_seek.gml
+Converted description /// @description scr_seek(nearestwall,targetenemy,speed,wallobject)/// @param nearestwall
+/// @param targetenemy
+/// @param speed
+/// @param wallobject
+
+Converting GML script: ${project_dir}\scripts\scr_search\scr_search.gml
+Converted description /// @description scr_search(speed)/// @param speed
+
+Converting GML script: ${project_dir}\scripts\scr_scan\scr_scan.gml
+Converted description /// @description scr_scan()
+
+Converting GML script: ${project_dir}\scripts\scr_hunt_step\scr_hunt_step.gml
+Converted description /// @description scr_hunt_step(targetobect,wallobject,speed,view_cone_angle,max_view_dist)/// @param targetobect
+/// @param wallobject
+/// @param speed
+/// @param view_cone_angle
+/// @param max_view_dist
+
+Game speed set to 60
+Added compatibility script 'action/action_kill_object.gml'
+Added compatibility script 'action/action_restart_game.gml'
+Added compatibility script 'instance/instance_create.gml'
+Added compatibility script 'object/object_get_depth.gml'
+Added compatibility script 'action/__init_action.gml'
+Added compatibility script '__init_global.gml'
+Added compatibility script '__global_object_depths.gml'

@@ -1,34 +1,34 @@
-function PlayerCombat(_player, _stabAnimation, _shieldAnimation) {
-	currentState = _player.disableMovement;
+function PlayerCombat(_stabAnimation, _shieldAnimation) {
+	currentState = disableMovement;
 	
-	if (mouse_check_button_pressed(mb_left) && !_player.animationInterrupt) {
-		_player.sprite_index = _stabAnimation;
-		_player.image_index = 0;
+	if (mouse_check_button_pressed(mb_left) && !animationInterrupt) {
+		sprite_index = _stabAnimation;
+		image_index = 0;
 		
-		_player.animationInterrupt = true;
-		_player.animationInterruptTime = 0.6;
+		animationInterrupt = true;
+		animationInterruptTime = 0.6;
 		
 		return true;
 	}
 	
-	if (mouse_check_button_pressed(mb_right) && !_player.animationInterrupt) {
-		_player.sprite_index = _shieldAnimation;
-		_player.image_index = 0;
+	if (mouse_check_button_pressed(mb_right) && !animationInterrupt) {
+		sprite_index = _shieldAnimation;
+		image_index = 0;
 		
-		if (_player.image_index == _player.image_number - 1) {
-			_player.image_speed = 0;
+		if (image_index == image_number - 1) {
+			image_speed = 0;
 		}
 		
-		_player.animationInterrupt = true;
-		_player.animationInterrupted = true; // Skips the interrupt check
+		animationInterrupt = true;
+		animationInterrupted = true; // Skips the interrupt check
 		
 		return true;
 	}
 	
 	if (mouse_check_button_released(mb_right)) {
-		_player.animationInterrupt = false;
-		_player.animationInterrupted = false;
-			_player.image_speed = 1;
+		animationInterrupt = false;
+		animationInterrupted = false;
+		image_speed = 1;
 		
 		return false;
 	}

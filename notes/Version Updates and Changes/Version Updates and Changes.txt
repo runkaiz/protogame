@@ -1,0 +1,125 @@
+Thank you for downloading my free script pack! Please consider leaving a review if you found them useful, it really helps me out! Thank you!
+
+- Leave a review (GM Marketplace Version): https://marketplace.yoyogames.com/assets/10477/maxlos-free-script-pack			                  
+- Leave a review (Itch.Io Version): https://maxlos.itch.io/maxlos-free-script-pack-gamemaker-studio-2					                  
+- Where you can contact me for questions, comments, or to report bugs: MaxLoss319@gmail.com
+//-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+//														    MaxLos' Free Script Pack v 1.1.0 (December 23, 2021)
+
+16 additional new scripts have been added, for a new total of 71 scripts!:
+{
+	+ 'draw_layers()'
+	
+	+ 'file_get_extension()'
+	
+	+ 'layer_get_background_alpha()'
+	+ 'layer_get_background_blend()'
+	+ 'layer_get_background_htiled()'
+	+ 'layer_get_background_sprite()'
+	+ 'layer_get_background_speed()'
+	+ 'layer_get_background_stretched()'
+	+ 'layer_get_background_vtiled()'
+	+ 'layer_get_element_name()'
+	+ 'layer_get_instances()'
+	+ 'layer_get_tileset_name()'
+	+ 'layer_get_tilemap_width()'
+	+ 'layer_get_tilemap_height()'
+	+ 'layer_temporary_exists()'
+	
+	+ 'string_bool()'
+}
+
+//-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+															 MaxLos' Free Script Pack v 1.0.0 (December 7, 2021)
+																	
+Release version; script pack contained the following, for a total of 55 scripts!:
+{
+	//Debugging
+	{
+		• 'show_debug_message_array_1d()'
+		• 'show_debug_message_ds_list()'
+		• 'show_debug_message_ds_map()'
+		• 'show_debug_messages()'
+	}
+	
+	//Drawing
+	{
+		• 'draw_array()'
+		• 'draw_ds_grid()'
+		• 'draw_ds_map()'
+		• 'draw_grid_accurate()'
+		• 'draw_line_accurate()'
+		• 'draw_rectangle_over_screen()'
+		• 'draw_set()'
+		• 'draw_set_default()'
+		• 'draw_sprite_to_surface()'
+		• 'draw_variables()'
+	}
+	
+	//Math, Numbers, and Variables
+	{
+		• is_divisible
+		• is_prime
+		• is_whole
+		• value_changed
+		• value_closest
+		• value_cut
+		• value_furthest
+		• value_round_even
+		• value_round_multiple
+		• value_round_odd
+		• value_within_range
+		• value_wrap
+		• var_control_ext
+		• var_swap
+	}
+	
+	//Miscellaneous
+	{
+		• basic_movement
+		• layer_is_temporary
+		• outside_room
+		• random_color
+		• tileset_exists
+	}
+	
+	//Paths
+	{
+		• path_get_height
+		• path_get_length_ext
+		• path_get_width
+	}
+	
+	//Sprites
+	{
+		• sprite_get_bbox_height
+		• sprite_get_bbox_width
+		• sprite-get_if_bboxkind_is_rectangular
+	}
+	
+	//Strings
+	{
+		• string_char_is_digit
+		• string_char_is_letter
+		• string_char_is_msc
+		• string_chars_from
+		• string_clamp
+		• string_cut
+		• string_first_char
+		• string_insert_quotes
+		• string_is_real
+		• string_key
+	}
+	
+	//Surfaces
+	{
+		• surface_clear
+	}
+	
+	//Views, Cameras, and Windows
+	{
+		• camera_get_view_x_ext
+		• camera_get_view_y_ext
+		• window_is_minimized
+	}
+}
