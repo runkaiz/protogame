@@ -28,7 +28,8 @@
   ],
   "properties": [],
   "overriddenProperties": [
-    {"propertyId":{"name":"enemyWanderDistance","path":"objects/ParentEnemy/ParentEnemy.yy",},"objectId":{"name":"ParentEnemy","path":"objects/ParentEnemy/ParentEnemy.yy",},"value":"64","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+    {"propertyId":{"name":"enemyWanderDistance","path":"objects/ParentEnemy/ParentEnemy.yy",},"objectId":{"name":"ParentEnemy","path":"objects/ParentEnemy/ParentEnemy.yy",},"value":"256","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+    {"propertyId":{"name":"enemyAggroRadius","path":"objects/ParentEnemy/ParentEnemy.yy",},"objectId":{"name":"ParentEnemy","path":"objects/ParentEnemy/ParentEnemy.yy",},"value":"128","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
   ],
   "parent": {
     "name": "Enemies",

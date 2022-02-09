@@ -1,10 +1,10 @@
 {
   "parent": {
-    "name": "About",
-    "path": "folders/Horri-fi/About.yy",
+    "name": "Lighting",
+    "path": "folders/Notes/Lighting.yy",
   },
   "resourceVersion": "1.1",
-  "name": "License",
+  "name": "LICENSE",
   "tags": [],
   "resourceType": "GMNotes",
 }
